@@ -30,22 +30,32 @@
          <a href="#" class="fas fa-shopping-cart"></a>
          <div id="search-button" class="fas fa-search"></div>
       </div>
-      <i class="fas fa-user" id="login-btn"></i>
-         <div class="login-form">
-              <i class="fas fa-times" id="form-close"></i>
-            <form action="">
-                <h1 class="head">login</h1>
-                <input type="email" class="box" placeholder="enter your email">
-                <input type="password" class="box" placeholder="enter your password">
-                <input type="submit" value="login now" class="btn">
-                <input type="checkbox" id="remember">
-                <label for="remember">remember me</label>
-                <p>forget password? <a href="#">click here</a></p>
-                <p>Don't have and account? <a href="#">register now</a></p>
-            </form>
-
-        </div>
+       <div class="icons">
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+        
    </header>
+   <div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email"  onkeyup="validemail()" id="email" >
+        <p id="erroremail">
+
+        </p>
+        <input type="password" class="box" placeholder="enter your password"  onkeyup="validpassword()" id="password" >
+        <p id="errorpassword">
+        </p>
+        <input type="submit" value="login now" class="btn"  onclick="getFormvalue()" >
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+
+</div>
    <div class="search-form">
 
       <div id="close-search" class="fas fa-times"></div>
